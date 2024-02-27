@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.pagination input {
+  width: 30px;
+  text-align: center;
+}
+
+.pagination input, button, p {
+  margin: 1rem 1rem 1rem 1rem;
+  padding: 8px 8px 8px 8px;
+}
+
+.pagination button {
+  cursor: pointer;
+  border: none;
+}

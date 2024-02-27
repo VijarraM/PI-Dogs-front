@@ -1,0 +1,33 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f1f1f1; /* Color de fondo de la barra de navegación */
+  color: #979797;
+  padding: 5px 20px; /* Espaciado interior */
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  width: 80px; /* Ajusta el tamaño del logotipo */
+  margin-right: 10px;
+}
+
+.navbar-right {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-right a {
+  text-decoration: none;
+  color: #979797;
+  font-weight: bold;
+}
+
+.navbar-right a:hover {
+  text-decoration: underline; /* Cambia el estilo al pasar el mouse sobre los enlaces */
+}

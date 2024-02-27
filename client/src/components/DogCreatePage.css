@@ -1,0 +1,151 @@
+/* DogCreatePage.css */
+.form-container {
+  flex: 1; /* Toma el espacio disponible restante */
+  padding-right: 20px; /* Espacio entre la imagen y el formulario */
+}
+
+.img-create {
+  flex: 1; /* Toma el espacio disponible restante */
+  padding-right: 20px; /* Espacio entre la imagen y el formulario */
+  width: 450px;
+  height: auto;
+  margin: 10px;
+  border-radius: 30px;
+}
+
+.dog-create-container {
+  display: flex;
+  flex-direction: row; /* Alinea los elementos en una fila */
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 1px;
+  max-width: 1000px;
+  width: 100%;
+  margin: 50px auto;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.input-text {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 16px;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+}
+
+.range-input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 5px;
+  width: 50px;
+  font-size: 16px;
+}
+
+.unit-label {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cancel-button,
+.create-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.cancel-button {
+  background-color: #d9534f;
+  color: white;
+}
+
+.create-button {
+  background-color: #5bc0de;
+  color: white;
+}
+.temperaments {
+  font-weight: bold;
+}
+
+.title {
+  font-weight: bold;
+}
+
+/* Estilos para el contenedor de las etiquetas de temperamento */
+.temperament-tags {
+  display: flex; /* Utiliza flexbox para mostrar las etiquetas de temperamento en línea */
+  flex-wrap: wrap; /* Permite que las etiquetas se envuelvan a la siguiente línea si no caben en el ancho del contenedor */
+  gap: 4px; /* Espacio entre las etiquetas de temperamento */
+}
+
+/* Estilos para cada etiqueta de temperamento */
+.temperament-tag {
+  display: flex; /* Utiliza flexbox para alinear el texto y el botón horizontalmente */
+  align-items: center; /* Alinea verticalmente el texto y el botón */
+  background-color: #007bff; /* Color de fondo para las etiquetas */
+  color: white; /* Color del texto para las etiquetas */
+  border-radius: 5px; /* Bordes redondeados para las etiquetas */
+  padding: 1px; /* Espaciado interno para las etiquetas */
+  min-width: 60px; /* Ancho mínimo fijo para todas las etiquetas */
+  text-align: center; /* Centra el texto horizontalmente dentro de la etiqueta */
+}
+
+/* Estilos para el botón de eliminación */
+.button-x {
+  background-color: #ff6347; /* Color de fondo para el botón de eliminación */
+  border: none;
+  border-radius: 50%; /* Bordes redondeados para el botón de eliminación */
+  padding: 5px;
+  margin-left: 5px; /* Espacio entre las etiquetas de temperamento */
+  cursor: pointer;
+}
+
+/* Estilos para el icono "X" */
+.remove-button {
+  font-weight: bold;
+  font-size: 10px;
+  color: white; /* Color del texto para el icono "X" */
+  line-height: 1;
+}
+
+/* .button-x {
+  font-size: 10px;
+  font-weight: bold;
+  color: red;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  border: 0;
+  outline: none;
+} */

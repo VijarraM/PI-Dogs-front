@@ -1,0 +1,118 @@
+/* src/components/HomePage.css */
+
+/* Estilo para el contenedor principal de la página de inicio */
+.homepage-container {
+  font-family: helvetica;
+  font-weight: bolder;
+  padding: 10px;
+  text-align: center;
+}
+
+.p-loading {
+  font-weight: bold;
+}
+
+/* Estilo para el contenedor de los filtros y los ordenamientos */
+/* Estilos para el contenedor de filtros y controles de orden */
+.filters-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0;
+  margin-bottom: 20px; /* Agrega un margen inferior para separar el contenido de abajo */
+}
+
+/* Estilos para los filtros */
+.filters {
+  display: flex;
+  align-items: center;
+  padding-right: 10px; /* Agrega un pequeño espacio en el borde derecho de los filtros */
+}
+
+/* Estilos para los controles de orden */
+.order {
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para los selectores de filtro y orden */
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Agrega un pequeño espacio entre los selectores */
+  background-color: #f5f5f5; /* Fondo gris claro */
+  color: #333; /* Texto negro */
+}
+
+.filters label,
+.order label {
+  margin-right: 10px; /* Ajusta el espacio entre el label y el select */
+}
+
+/* Estilos para los botones de búsqueda */
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para el input de búsqueda */
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 300px;
+}
+
+/* Estilo para el botón de búsqueda */
+.search-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Estilo para la lista de razas de perros */
+.dog-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  grid-gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 20px;
+}
+
+/* Estilo para cada tarjeta de raza de perro */
+.dog-card {
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Estilo para el nombre de la raza de perro */
+.dog-name {
+  font-weight: bold;
+}
+
+/* Cambia la disposición a una columna en pantallas pequeñas */
+@media (max-width: 1200px) {
+  .dog-list {
+    grid-template-columns: 1fr; /* Una sola columna en pantallas pequeñas */
+  }
+
+  .filters-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

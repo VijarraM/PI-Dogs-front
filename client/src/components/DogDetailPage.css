@@ -1,0 +1,85 @@
+/* CSS para el contenedor exterior */
+.outer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh; /* Ajusta la altura según tus necesidades */
+}
+
+/* CSS para .dog-detail-container */
+.dog-detail-container {
+  display: flex;
+  flex-direction: column; /* Alinea el contenido verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #cccccc3d;
+  width: 800px;
+  height: 750px;
+}
+
+/* Resto de los estilos sin cambios */
+
+/* Estilos para la imagen */
+.dog-image3 {
+  max-width: 350px;
+  max-height: 350px;
+  border-radius: 10px;
+  margin-right: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dog-details {
+  width: 100%;
+  height: 700px;
+}
+
+/* Estilos para el contenido de la información del perro */
+.dog-details h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif; /* Cambia la fuente del título */
+  color: #333; /* Cambia el color del texto */
+  text-transform: uppercase; /* Convierte el texto en mayúsculas */
+}
+
+.dog-details p {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-family: 'Georgia', serif; /* Cambia la fuente de la información */
+  color: #666; /* Cambia el color del texto */
+  line-height: 0, 5; /* Ajusta el espaciado entre líneas */
+}
+
+/* Estilos para pantallas más pequeñas (responsividad) */
+@media (max-width: 768px) {
+  .dog-detail-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .dog-details {
+    max-width: 100%;
+  }
+}
+
+.button {
+  background-color: #007bff; /* Fondo azul */
+  border-radius: 10px; /* Esquinas redondeadas */
+  font-weight: bold;
+  color: white; /* Letras blancas */
+  padding: 10px 20px; /* Espaciado interno (ajusta según tus necesidades) */
+  text-align: center; /* Alineación del texto al centro */
+  text-decoration: none; /* Elimina el subrayado predeterminado para los enlaces */
+  display: inline-block; /* Hace que el botón se comporte como un elemento en línea */
+  cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin: 0;
+}

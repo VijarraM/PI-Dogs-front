@@ -1,0 +1,57 @@
+/* Estilos para la página de inicio (Landing Page) */
+.landing-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('.././assets/img/landing.jpg'); /* Reemplaza 'URL_IMAGEN' con la URL de tu imagen de fondo */
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+}
+
+.content {
+  text-align: center;
+  margin-left: 800px; /* Margen izquierdo base */
+  /* margin-right: 20%; */
+}
+
+#button {
+  padding: 15px 30px;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: none;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: 20px;
+  transition: background-color 0.3s, transform 0.3s;
+
+  /* Agrega un sombreado */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Pseudo-clase para el hover */
+#button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+
+  /* Aumenta ligeramente el sombreado en el hover */
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+#button:active {
+  transform: scale(0.9); /* Reduce el tamaño cuando se hace clic */
+}
+
+/* Estilos para dispositivos más pequeños (por ejemplo, pantallas móviles) */
+@media (max-width: 768px) {
+  .content {
+    margin-left: 10px; /* Cambiar el margen izquierdo para dispositivos más pequeños */
+  }
+
+  #button {
+    margin-left: 10px; /* Cambiar el margen izquierdo para dispositivos más pequeños */
+  }
+}
