@@ -13,8 +13,8 @@ export const CLEAR_SEARCH = 'CLEAR_SEARCH';
 export const CLEAR_BREEDS = 'CLEAR_BREEDS';
 export const FILTER_BY_ORIGIN = 'FILTER_BY_ORIGIN'; // Nueva acción
 export const FILTER_BY_TEMPERAMENT = 'FILTER_BY_TEMPERAMENT';
-const { REACT_APP_API } = process.env;
-const baseURL = REACT_APP_API || 'http://localhost:3001';
+const API_URL = process.env;
+const baseURL = API_URL || 'http://localhost:3001';
 
 export function filterByOrigin(origin, breeds) {
   switch (origin) {
